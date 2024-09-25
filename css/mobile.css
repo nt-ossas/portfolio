@@ -1,0 +1,78 @@
+@media (max-width: 768px) {
+    header .container .content h1{
+        font-size: 3rem;
+        margin-right: 35%;
+        padding-block: 30%;
+    }
+    #desktop{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
+    nav{
+        margin-top: -22%;
+    }
+    nav .content{
+        height: 10px;
+        margin: 0;
+        gap: 25px;
+        width: 60%;
+        margin-left: 40%;
+    }
+    nav .content a{
+        font-size: 1rem;
+        margin-top: -.3rem;
+    }
+    
+    nav .content a::after{
+        margin-top: 1.45rem;
+        height: 2px;
+    }
+    
+    nav .content a:hover::after{
+        display: none;
+    }
+
+    main{
+        margin-top: 24%;
+    }
+
+    .separa{
+        height: 35px;
+    }
+    .separa .scroll-text{
+        line-height: 5px;
+    }
+    .separa .scroll-text h3{
+        margin-inline: 1em;
+        font-size: 1rem;
+    }
+    .developer-info {
+        padding: 20px;
+        margin-inline: 20px;
+        margin-top: -25px;
+    }
+    .developer-info h3 {
+        display: none;
+    }
+    .developer-info h4 {
+        font-size: 1.5rem;
+    }
+    .developer-info p, .developer-info ul li {
+        font-size: 1rem;
+    }
+    .developer-info ul li {
+        margin-left: -35px;
+    }
+    .developer-info img {
+        max-width: 90%;
+    }
+    .logos{
+        gap: 5%;
+    }
+    .logos img{
+        border-radius: 15px;
+        max-width: 50px !important;
+    }
+}

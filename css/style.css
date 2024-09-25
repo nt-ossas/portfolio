@@ -63,7 +63,7 @@ header .container .content h1{
     white-space: nowrap;
     will-change: transform;
     animation: scroll 10s linear infinite;
-    line-height: 17.5px; /* Assicura che il testo sia centrato verticalmente */
+    line-height: 17.5px;
     position: absolute;
 }
 
@@ -73,15 +73,23 @@ header .container .content h1{
 
 @keyframes scroll {
     0% {
-        transform: translateX(0); /* Inizia da 0 */
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* Si sposta di metà larghezza (dato che abbiamo duplicato il contenuto) */
+        transform: translateX(-50%);
     }
 }
 
+#mobile{
+    display: none;
+}
+
+.filler{
+    display: none;
+}
+
 nav {
-    margin-top: -200px;
+    margin-top: -14%;
     position: sticky;
     top: 20px;
     z-index: 2;
@@ -141,7 +149,7 @@ nav a.selected::after{
 }
 
 main {
-    margin-top: 200px;
+    margin-top: 14%;
 }
 
 .developer-info {
@@ -208,24 +216,4 @@ main {
     max-width: 550px;
     margin: 20px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-
-/* Media Query per rendere il layout più responsivo su dispositivi mobili */
-@media (max-width: 768px) {
-    .developer-info {
-        padding: 20px;
-    }
-    .developer-info h3 {
-        font-size: 2rem;
-    }
-    .developer-info h4 {
-        font-size: 1.5rem;
-    }
-    .developer-info p, .developer-info ul li {
-        font-size: 1rem;
-    }
-    .developer-info img {
-        width: 120px;
-    }
 }
