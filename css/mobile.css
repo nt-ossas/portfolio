@@ -81,11 +81,14 @@
         max-height: 50px;
     }
     .logo-img {
-        max-width:75px !important; /* Puoi modificare la dimensione in base alle tue preferenze */
+        max-width:75px !important; 
     }
     h4.tag{
         font-size: 12px;
         text-align: center;
         opacity: .75;
+    }
+    .build ul {
+        padding: 20px;
     }
 }
