@@ -4,6 +4,7 @@
     --accent-color:#4A90E2;
     --text:cornsilk;
     --text-secondary: #b3b3b3;
+    --contrast-color: #FFD700;
 }
 body{
     background-color: var(--bg-color);
@@ -100,7 +101,8 @@ nav {
 nav .content {
     background-color: var(--bg-color);
     max-width: 750px;
-    padding: 10px 0px;
+    height: 60px;
+    line-height: 20px;
     border-radius: 50px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -109,9 +111,10 @@ nav .content {
     justify-content: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     margin-left: auto;
+    cursor: pointer;
 }
 
-nav a{
+nav p{
     color: var(--accent-color);
     text-decoration: none;
     text-transform: uppercase;
@@ -120,7 +123,7 @@ nav a{
     transition: .3s;
 }
 
-nav a::after{
+nav p::after{
     content: '';
     width: 150%;
     height: 3px;
@@ -132,12 +135,12 @@ nav a::after{
     transition: .3s;
 }
 
-nav a:hover::after{
+nav p:hover::after{
     background-color: var(--accent-color);
     transition: .3s;
 }
 
-nav a.selected::after{
+nav p.selected::after{
     content: '';
     width: 150%;
     height: 3px;
@@ -150,6 +153,16 @@ nav a.selected::after{
 
 main {
     margin-top: 14%;
+    display: none;
+}
+
+main.online{
+    display: block;
+}
+
+article,footer{
+    max-width: 800px;
+    margin: 40px auto;
 }
 
 .developer-info {
@@ -162,7 +175,7 @@ main {
     color: var(--text);
 }
 
-.developer-info h3 {
+ h3.developer-info {
     font-size: 2.5rem;
     color: var(--accent-color);
     margin-bottom: 10px;
@@ -216,4 +229,79 @@ main {
     max-width: 550px;
     margin: 20px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.developer-info a{
+    color: var(--accent-color);
+}
+
+.img{
+    display: flex;
+}
+
+.img img{
+    max-width: 150px;
+}
+
+.img img:first-child, .img img:last-child{
+    box-shadow: 0 0 0;
+}
+
+.projects h5{
+    font-weight:normal;
+}
+
+#section-3 .img img{
+    max-width: 75px;
+    max-height: 75px;
+    box-shadow: 0 0 0;
+}
+
+#section-2 .img img{
+    box-shadow: 0 0 0;
+}
+
+.logo-img {
+    max-width: 100px !important; /* Puoi modificare la dimensione in base alle tue preferenze */
+    height: auto;
+    vertical-align: middle; /* Allinea verticalmente l'immagine con il testo */
+}
+
+.build h5 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.build ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.build li {
+    margin: 10px 0;
+    font-size: 1.125rem;
+    transition: 0.3s;
+}
+
+.build li:hover {
+    color: var(--accent-color);
+    transform: scale(1.02);
+    cursor:default;
+}
+
+.price {
+    color: #FFD700; /* Oro */
+    font-weight: bold;
+}
+
+.total-price {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+h4.tag{
+    font-size: 14px;
+    text-align: center;
+    opacity: .75;
 }
