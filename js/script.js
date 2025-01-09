@@ -23,3 +23,33 @@ function section(n){
     });
     section.classList.add('online');
 }
+
+function classe(n){
+    var terza = document.getElementById('terza');
+    var quarta = document.getElementById('quarta');
+    var quinta = document.getElementById('quinta');
+    var annoTerza = document.getElementById('anno-terza');
+    var annoQuarta = document.getElementById('anno-quarta');
+    var annoQuinta = document.getElementById('anno-quinta');
+    var annos = document.querySelectorAll(`.anno`);
+    var classes = document.querySelectorAll(`.classe`);
+    classes.forEach(element => {
+        element.classList.remove('choosen');
+    });
+    annos.forEach(element => {
+        element.classList.add('hidden');
+    });
+    if(n == 3){
+        terza.classList.add('choosen');
+        annoTerza.classList.remove('hidden');
+        console.log('terza');
+    }else if(n == 4){
+        quarta.classList.add('choosen');
+        annoQuarta.classList.remove('hidden');
+        console.log('quarta');
+    }else if(n == 5){
+        quinta.classList.add('choosen');
+        annoQuinta.classList.remove('hidden');
+        console.log('quinta');
+    }
+}

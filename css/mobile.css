@@ -1,8 +1,8 @@
 @media (max-width: 768px) {
     header .container .content h1{
         font-size: 3rem;
-        margin-right: 35%;
         padding-block: 30%;
+        margin-bottom: -15px;
     }
     #desktop{
         display: none;
@@ -90,5 +90,15 @@
     }
     .build ul {
         padding: 20px;
+    }
+    .dual{
+        flex-direction: column;
+    }
+    .trio{
+        gap: 5%;
+    }
+    .icons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }

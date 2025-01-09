@@ -4,7 +4,7 @@
     <title>Portfolio</title>
     <meta charset="UTF-8">
     <link rel="icon" href="img/ossas_logo_trasparent.png"/>
-    <meta name="author" content="Ossas">
+    <meta name="author" content="Alex Graziano">
     <meta name="theme-color" content="#28293D">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,16 +17,16 @@
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
-    <!--header-->
+    <!-- header -->
     <header>
         <div class="container">
-            <img src="img/ossas_logo_trasparent.png">
+            <img src="img/ossas_logo.png">
             <div class="content">
-                <h1>Ossas</h1>
+                <h1>Portfolio</h1>
             </div>
         </div>
     </header>
-    <!--separa-->
+    <!-- scrolltext -->
     <div class="separa">
         <div class="scroll-text">
             <h3>WebSite Developer </h3>
@@ -41,17 +41,7 @@
             <h3>-</h3>
             <h3>Computer Builder</h3>
             <h3>-</h3>
-            <h3>SchoolSync Owner</h3>
-            <h3>-</h3>
-            <h3>SUW Owner</h3>
-            <h3>-</h3>
-            <h3>ClassMap Owner</h3>
-            <h3>-</h3>
-            <h3>GuessTheAlbum Owner</h3>
-            <h3>-</h3>
-            <h3>TechZone Owner</h3>
-            <h3>-</h3>
-            <h3>CryptoZone Owner</h3>
+            <h3>Blaise Pascal student</h3>
             <h3>-</h3>
             <h3>WebSite Developer </h3>
             <h3>-</h3>
@@ -65,137 +55,139 @@
             <h3>-</h3>
             <h3>Computer Builder</h3>
             <h3>-</h3>
-            <h3>SchoolSync Owner</h3>
+            <h3>Blaise Pascal student</h3>
             <h3>-</h3>
-            <h3>SUW Owner</h3>
+            <h3>WebSite Developer </h3>
             <h3>-</h3>
-            <h3>ClassMap Owner</h3>
+            <h3>CSS Writer</h3>
             <h3>-</h3>
-            <h3>GuessTheAlbum Owner</h3>
+            <h3>HTML Writer</h3>
             <h3>-</h3>
-            <h3>TechZone Owner</h3>
+            <h3>JavaScript Developer</h3>
             <h3>-</h3>
-            <h3>CryptoZone Owner</h3>
+            <h3>C++ Developer</h3>
+            <h3>-</h3>
+            <h3>Computer Builder</h3>
+            <h3>-</h3>
+            <h3>Blaise Pascal student</h3>
             <h3>-</h3>
         </div>
     </div>
     <!--nav desktop-->
     <nav id="desktop">
         <div class="content">
-            <p href="" class="nav-1 selected" onclick="section(1)">Progetti</p>
-            <p href="" class="nav-2" onclick="section(2)">Servizi</p>
-            <p href="" class="nav-3" onclick="section(3)">Portfolio</p>
-            <p href="" class="nav-4" onclick="section(4)">Contatti</p>
+            <p href="" class="nav-1 selected" onclick="section(1)">About</p>
+            <p href="" class="nav-2" onclick="section(2)">Progetti</p>
+            <p href="" class="nav-3" onclick="section(3)">...</p>
+            <p href="" class="nav-4" onclick="section(4)">Progetti Personali</p>
         </div>
     </nav>
     <!--nav mobile-->
     <nav id="mobile">
         <div class="content">
-            <p href="" class="nav-1 selected" onclick="section(1)"><i class="fa-solid fa-diagram-project"></i></p>
-            <p href="" class="nav-2" onclick="section(2)"><i class="fa-solid fa-computer"></i></p>
-            <p href="" class="nav-3" onclick="section(3)"><i class="fa-solid fa-user-tie"></i></p>
-            <p href="" class="nav-4" onclick="section(4)"><i class="fa-solid fa-comments"></i></p>
+            <p href="" class="nav-1 selected" onclick="section(1)"><i class="fa-regular fa-address-card"></i></p>
+            <p href="" class="nav-2" onclick="section(2)"><i class="fa-solid fa-briefcase"></i></p>
+            <p href="" class="nav-3" onclick="section(3)"><i class="fa-regular fa-address-book"></i></p>
+            <p href="" class="nav-4" onclick="section(4)"><i class="fa-regular fa-user"></i></p>
         </div>
     </nav>
     <div class="filler"></div>
     <!--projects-->
-    <main id="section-1" class="online">
+    <main id="section-2">
         <article>
-            <h3 class="developer-info">Lo Sviluppatore Visionario</h3>
-            <div class="developer-info">
-                <h4>Progetti Innovativi e Soluzioni Creative</h4>
-                <p>È uno sviluppatore talentuoso che ha lasciato il segno nel mondo della tecnologia con una serie di progetti rivoluzionari. Tra i suoi lavori più conosciuti troviamo <strong>Classmap</strong>, <strong>SchoolSync</strong> e molti altri strumenti che hanno trasformato il modo in cui la tecnologia viene utilizzata nel campo educativo e aziendale.</p>    
+            <div class="developer-info trio">
+                <button onclick="classe(3)" id="terza" class="classe choosen">Terza</button>
+                <button onclick="classe(4)" id="quarta" class="classe">Quarta</button>
+                <button onclick="classe(5)" id="quinta" class="classe">Quinta</button>
             </div>
-            <div class="developer-info">
-                <img src="img/ossas_logo_text_16-9.png"> 
+            <!--anno terza-->
+            <div class="anno" id="anno-terza">
+                <div class="developer-info">
+                    <h4>Progetti Scolastici</h4>
+                    <p>Durante il terzo anno del mio percorso scolastico al Blaise Pascal ho partecipato a vari progetti, tra cui:</p>
+                    <ul>
+                        <li>Progetto Facoltativo - Corso di Web Design</li>
+                        <li>Progetto PCTO - Monta Smonta</li>
+                    </ul>
+                </div>
+                <div class="developer-info">
+                    <p>immagine progetti</p>
+                    <img src="img/ossas_logo_text_16-9.png"> 
+                </div>
+                <!--web design project-->
+                <div class="developer-info">
+                    <h4>Corso di Web Design</h4>
+                    <p>Durante il corso dell'anno, a partire da circa fine Novembre ho partecipato a un corso di Web Design insieme a dei compagni gestito dalla Professoressa Valentina Franchi. <br>
+                    Esso consisteva nell'istruzione delle parti basilari necessarie partendo dalle foto, infatti ci ha mostrato i vari formati e le differenze tra le foto (.png, .raw, .jpeg),
+                    per poi imparare come costruire una locandina alternativa per Wall Street English in due diversi modi: una indirizzata agli adulti e un'altra invece ai bambini.</p>
+                    <div class="dual">
+                        <img src="img/wallstreet_adulti.jpg">
+                        <img src="img/wallstreet_bambini.jpg">
+                    </div>
+                </div>
+                <!--monta smonta project-->
+                <div class="developer-info">
+                    <h4>Monta Smonta</h4>
+                    <p>Nei primi di gennaio abbiamo avviato il progetto Monta Smonta: spiegazione da completare in seguito.</p>
+                    <div class="dual">
+                        <img src="img/monta.png">
+                        <img src="img/smonta.png">
+                    </div>
+                </div>
             </div>
-        
-            <div class="developer-info">
-                <h4>Principali Progetti</h4>
-                <ul class="projects">
-                    <li><strong><a href="https://nt-ossas.github.io">TechZone & CryptoZone</a></strong> - Due vasti WebSite che trattano di tutto quello che c'è da sapere sull'HardWare di un computer e su tutto il mondo delle Criptovalute (È ancora in una vecchia versione).</li>
-                    <li><strong><a href="https://nt-ossas.github.io/schoolsync">SchoolSync</a></strong> - Uno strumento di gestione per studenti, che permette di segnare tutti gli eventi, note, voti e visualizzare la media di ogni materia e totale.</li>
-                    <li><strong><a href="https://nt-ossas.github.io/schoolsync/html/classmap">ClassMap</a></strong> - Una piattaforma intuitiva che facilita lo spostamento nelle aule e laboratori del polo scolastico Blaise Pascal Reggio Emilia.</li>
-                    <li><strong><a href="https://nt-ossas.github.io/guess">GuessTheAlbum</a></strong> - Un indovina chi, ma con gli album musicali della scena Internazionale e Italiana con più di 150 scelte.</li>
-                    <li><strong><a href="https://nt-ossas.github.io/gym">SUW</a></strong> - Uno strumento di gestione del proprio allenamento, puoi segnare tutti i tuoi esercizi, ripetizioni e le varie giornate.</li>
-                </ul>
+            <!--anno quarta-->
+            <div class="anno hidden" id="anno-quarta">
+                <p class="developer-info">ancora niente in quarta :(</p>
+            </div>
+            <!--anno quinta-->
+            <div class="anno hidden" id="anno-quinta">
+                <p class="developer-info">ancora niente in quinta :(</p>                
             </div>
         </article>        
     </main>
-    <!--builds-->
-    <main id="section-2">
+    <!--about myself-->
+    <main id="section-1" class="online">
         <article>
-            <h3 class="developer-info">Dettaglio delle Build PC</h3>
+            <h3 class="developer-info">About MySelf</h3>
+            <div class="dual developer-info">
+                    <div>
+                        <img src="img/ossas.jpeg">
+                        <h4>Chi sono ?</h4>
+                    </div>
+                    <p>Sono un ragazzo di 16 anni che frequenta la scuola <a href="https://www.pascal.edu.it">Blaise Pascal</a> indirizzo informatico di Reggio Emilia e che ha seguito 
+                        i primi 2 anni di lezioni all'istituto <a href="https://www.istitutodarzo.edu.it">Silvio D'Arzo</a> di Montecchio Emilia. Fin dall'inizio ho scelto l'indirizzo Informatica
+                        e telecomunicazioni per la mia passione profonda per i computer e il loro funzionamento, ma sopratutto nella programmazione. Mi è stata introdotta in terza media e me ne 
+                        sono innamorato, infatti ho seguito dei corsi privati e tutt'ora ne sto seguendo. Grazie agli ultimi sono riuscito a creare vari progetti ma quello ce ne è uno su cui ho 
+                        lavorato di più (scoprilo nella sezione <span onclick="section(3)" class="link click">progetti personali</span>). </p>    
+            </div>
             <div class="developer-info">
-                <h4>Le mie configurazioni personalizzate</h4>
-                <p>Di seguito sono riportati tre esempi delle mie build di PC. I dettagli completi dei componenti sono parzialmente oscurati per maggiore riservatezza. Per saperne di più, contattami direttamente!</p>    
-            </div>            
-            
-            <!-- Build 4 -->
-            <div class="developer-info build">
-                <h5>Build 4 - Prezzo: <strong class="price">1250€</strong></h5>
+                <h4>skills</h4>
+                <p>Come citato prima, ho seguito dei corsi per lo sviluppo dei miei progetti e questo è il livello che ho raggiunto:</p>
                 <ul>
-                    <li><strong>Processore:</strong> CPU di fascia alta (r5) - <span class="price">209€</span></li>
-                    <li><strong>Scheda Video:</strong> GPU gaming di fascia media-alta (7800 XT) - <span class="price">495</span></li>
-                    <li><strong>RAM:</strong> 32GB DDR5 ad alta velocità (6000Mhz) - <span class="price">105€</span></li>
-                    <li><strong>SSD:</strong> SSD NVMe 1TB ad alte prestazioni - <span class="price">53€</span></li>
-                    <li><strong>Scheda Madre:</strong> Scheda madre compatibile con Wi-fi e overclock - <span class="price">175€</span></li>
-                    <li><strong>Dissipatore:</strong> Raffreddamento a liquido 240mm - <span class="price">51€</span></li>
-                    <li><strong>Alimentatore:</strong> 750W certificato 80+ Bronze - <span class="price">77€</span></li>
-                    <li><strong>Case:</strong> Case dual chamber Clean Glass E-ATX - <span class="price">85€</span></li>
+                    <li><span class="link">C++:</span> linguaggio di programmazione principale</li>
+                    <li><span class="link">JavaScript:</span> ancora in sviluppo, in grado di usare il local storage e DOM.</li>
+                    <li><a href="https://nodejs.org/en">Node.js: </a> integrazione del back-end e di altri framework.</li>
+                    <li><span class="link">HTML:</span> in grado di impostare una struttura per una pagina web più che correttamente.</li>
+                    <li><span class="link">CSS:</span> in grado di sviluppare graficamente un sito web in modo avanzato.</li>
+                    <li><span class="link">PHP:</span> convertendo parte dei progetti HTML in PHP per contenuti dinamici e ho provato le mail no-replay.</li>
+                    <li><span class="link">SQL:</span> imparato le basi per i database, ancora in sviluppo.</li>
+                    <li><span class="link">Python:</span> livello molto base.</li>
                 </ul>
-                <h6><strong>TOTALE:</strong> <span class="total-price">1250€</span></h6>
             </div>
-
-            <!-- Build 3 -->
-            <div class="developer-info build">
-                <h5>Build 3 - Prezzo: <strong class="price">1000€</strong></h5>
-                <ul>
-                    <li><strong>Processore:</strong> CPU di fascia alta (i7) - <span class="price">213€</span></li>
-                    <li><strong>Scheda Video:</strong> GPU gaming di fascia media (7600 XT) - <span class="price">371€</span></li>
-                    <li><strong>RAM:</strong> 64GB DDR4 ad alta velocità - <span class="price">124€</span></li>
-                    <li><strong>SSD:</strong> SSD NVMe 1TB ad alte prestazioni - <span class="price">53€</span></li>
-                    <li><strong>Scheda Madre:</strong> Scheda madre compatibile e overclock - <span class="price">136€</span></li>
-                    <li><strong>Dissipatore:</strong> Raffreddamento a liquido 240mm - <span class="price">52€</span></li>
-                    <li><strong>Alimentatore:</strong> 650W certificato 80+ Bronze - <span class="price">65€</span></li>
-                    <li><strong>Case:</strong> Case con 4 ventole ARGB - <span class="price">56€</span></li>
-                </ul>
-                <h6><strong>TOTALE:</strong> <span class="total-price">1070€</span></h6>
-            </div>
-            
-            <!-- Build 2 -->
-            <div class="developer-info build">
-                <h5>Build 2 - Prezzo: <strong class="price">800€</strong></h5>
-                <ul>
-                    <li><strong>Processore:</strong> CPU 6 core (R5) - <span class="price">130€</span></li>
-                    <li><strong>Scheda Video:</strong> GPU gaming 8GB (6650 XT) - <span class="price">273€</span></li>
-                    <li><strong>RAM:</strong> 32GB DDR4 ad alta velocità - <span class="price">62€</span></li>
-                    <li><strong>SSD:</strong> SSD NVMe 1TB ad alte prestazioni - <span class="price">53€</span></li>
-                    <li><strong>Scheda Madre:</strong> Scheda madre con supporto AM4 - <span class="price">121€</span></li>
-                    <li><strong>Dissipatore:</strong> Raffreddamento a liquido 240mm - <span class="price">52€</span></li>
-                    <li><strong>Alimentatore:</strong> 650W certificato 80+ Bronze - <span class="price">65€</span></li>
-                    <li><strong>Case:</strong> Case con 4 ventole ARGB - <span class="price">56€</span></li>
-                </ul>
-                <h6><strong>TOTALE:</strong> <span class="total-price">812€</span></h6>
-            </div>
-            
-            <!-- Build 1 -->
-            <div class="developer-info build">
-                <h5>Build 1 - Prezzo: <strong class="price">700€</strong></h5>
-                <ul>
-                    <li><strong>Processore:</strong> CPU 6 core (R5) - <span class="price">130€</span></li>
-                    <li><strong>Scheda Video:</strong> GPU gaming 8GB (6600) - <span class="price">213€</span></li>
-                    <li><strong>RAM:</strong> 32GB DDR4 ad alta velocità - <span class="price">62€</span></li>
-                    <li><strong>SSD:</strong> SSD NVMe 1TB ad alte prestazioni - <span class="price">53€</span></li>
-                    <li><strong>Scheda Madre:</strong> Scheda madre con supporto AM4 - <span class="price">82€</span></li>
-                    <li><strong>Dissipatore:</strong> Raffreddamento a liquido 240mm - <span class="price">52€</span></li>
-                    <li><strong>Alimentatore:</strong> 650W certificato 80+ Bronze - <span class="price">65€</span></li>
-                    <li><strong>Case:</strong> Case con 4 ventole ARGB - <span class="price">56€</span></li>
-                </ul>
-                <h6><strong>TOTALE:</strong> <span class="total-price">713€</span></h6>
+            <div class="developer-info">
+                <div class="icons">
+                    <img src="img/c++.png">
+                    <img src="img/js.webp">
+                    <img src="img/node.png">
+                    <img src="img/html.png">
+                    <img src="img/css.png">
+                    <img src="img/php.png">
+                    <img src="img/sql.png">
+                    <img src="img/py.png">
+                </div>
             </div>
         </article>                   
-    </main>    
+    </main> 
     <!--portfolio-->
     <main id="section-3">
         <article>
@@ -239,15 +231,7 @@
                 </ul>
             </div>
 
-            <div class="developer-info">
-                <div class="img">
-                    <img src="img/html.png">
-                    <img src="img/css.png">
-                    <img src="img/js.webp">
-                    <img src="img/c++.png">
-                    <img src="img/php.png">
-                </div>
-            </div>
+            
 
             <div class="developer-info">
                 <h4>Feedback e Testimonianze</h4>
@@ -258,44 +242,31 @@
     <!--contact--> 
     <main id="section-4">
         <article>
-            <h3 class="developer-info">Contatti</h3>
+            <h3 class="developer-info">Prpgetti Personali</h3>
             <div class="developer-info">
-                <h4>Resta in Contatto</h4>
-                <p>Se desideri contattarmi per informazioni sui servizi che offro, per domande o collaborazioni, puoi utilizzare i seguenti metodi:</p>    
-            </div>            
-            <div class="developer-info">
-                <h4>Email</h4>
-                <p>Puoi scrivermi all'indirizzo: <strong><a href="https://mailto:graziano.alex21@gmail.com">graziano.alex21@gmail.com</a></strong></p>    
-            </div>            
-            <div class="developer-info">
-                <h4>Annuncio Subito</h4>
-                <p>Visita il mio annuncio per scoprire le mie offerte sui PC gaming: <strong><a href="https://www.subito.it/informatica/computer-gaming-pc-4070-ti-i7-13700k-fascia-alta-reggio-emilia-570675907.htm?utm_medium=referral&utm_source=subito&utm_campaign=free-engagement-ad_detail" target="_blank">Computer Gaming PC - Annuncio</a></strong></p>    
-            </div>            
-            <div class="developer-info">
-                <h4>Discord</h4>
-                <p>Puoi anche contattarmi su Discord: <strong><a href="https://discord.com/invite/zu53RTeG77" target="_blank">Unisciti al mio server Discord</a></strong></p>
-            </div>            
-            <div class="developer-info">
-                <h4>Disponibilità</h4>
-                <p>Sono sempre disponibile per rispondere a qualsiasi domanda tu possa avere riguardo ai miei servizi, alle configurazioni dei PC, ai componenti hardware o per consigli su progetti di assemblaggio. Non esitare a contattarmi!</p>
-            </div>            
-            <div class="developer-info">
-                <h4>Feedback e Testimonianze</h4>
-                <p>Non esitare a contattarmi per ricevere feedback o testimonianze dai miei clienti, che evidenziano la qualità e l'affidabilità dei miei servizi.</p>
-            </div>     
+                <p>Durante il mio percorso di apprendimento, ho avuto l'opportunità di lavorare su diversi progetti personali che mi hanno permesso di mettere in pratica le mie competenze e di esplorare nuove tecnologie. Ecco alcuni dei progetti più significativi:</p>
+                <ul class="projects">
+                    <li><a href="">SchoolSync:</a> Un registro personale con molte mini app e funzioni all'interno, Web-App e presto account.</li>
+                    <li><a href="">ClassMap:</a> Versione graficamente migliore del trova aule del <a href="">Blaise Pascal</a></li>
+                    <li><a href="">Guess:</a> Un gioco interattivo sviluppato in JavaScript, dove gli utenti devono indovinare un numero casuale generato dal computer.</li>
+                    <li><a href="">*TECHZONE:</a> Un sito web dedicato alla tecnologia, dove condivido articoli, recensioni e guide su vari argomenti tecnologici.</li>
+                    <li><a href="">*Suw:</a> Un'applicazione web per la gestione delle attività fisiche e del benessere, che offre funzionalità come il monitoraggio dell'attività fisica, la pianificazione degli allenamenti e consigli per uno stile di vita sano.</li>
+                </ul>
+                <h5 class="specifica">* Progetto non terminato o fuori update</h5>
+            </div>   
         </article>              
     </main>
     <!--footer-->
     <footer>
         <div class="developer-info">
             <div class="logos">
-                <a href="https://nt-ossas.github.io"><img src="img/TECHZONE_logo.png" style="box-shadow: 0 0 0;"></a>
                 <a href="https://nt-ossas.github.io/schoolsync"><img src="img/schoolsync_logo_500.png"></a>
                 <a href="https://nt-ossas.github.io/schoolsync/html/classmap"><img src="img/classmap.png"></a>
                 <a href="https://nt-ossas.github.io/guess"><img src="img/guess.png"></a>
+                <a href="https://nt-ossas.github.io"><img src="img/TECHZONE_logo.png" style="box-shadow: 0 0 0;"></a>
                 <a href="https://nt-ossas.github.io/gym"><img src="img/suw.png"></a>
             </div>
-            <h4 class="tag">2024 WebSite&copy; by Ossas- All Rights Reserved - PortFolio</h4>
+            <h4 class="tag">2025 Alex's Portfolio &copy; - All Rights Reserved - Powered by Ossas</h4>
         </div>
     </footer>
 </body>

@@ -1,9 +1,9 @@
 :root{
     --bg-color: #1E1E2E;
     --primary-color:#28293D;
-    --accent-color:#4A90E2;
-    --text:cornsilk;
-    --text-secondary: #b3b3b3;
+    --accent-color:rgba(74, 144, 226, 1);
+    --text:#E0E0FF;
+    --text-secondary: #b3b3cc;
     --contrast-color: #FFD700;
 }
 body{
@@ -31,6 +31,7 @@ header .container {
 header .container img{
     width: 25%;
     margin-left: 10%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 header .container .content {
@@ -222,6 +223,7 @@ article,footer{
 }
 .developer-info .projects a {
     color: var(--accent-color);
+    font-weight: bold;
 }
 
 .developer-info img {
@@ -233,6 +235,7 @@ article,footer{
 
 .developer-info a{
     color: var(--accent-color);
+    font-weight: bold;
 }
 
 .img{
@@ -251,20 +254,22 @@ article,footer{
     font-weight:normal;
 }
 
-#section-3 .img img{
+.icons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.icons img{
     max-width: 75px;
     max-height: 75px;
     box-shadow: 0 0 0;
 }
 
-#section-2 .img img{
-    box-shadow: 0 0 0;
-}
-
 .logo-img {
-    max-width: 100px !important; /* Puoi modificare la dimensione in base alle tue preferenze */
+    max-width: 100px !important;
     height: auto;
-    vertical-align: middle; /* Allinea verticalmente l'immagine con il testo */
+    vertical-align: middle;
 }
 
 .build h5 {
@@ -290,7 +295,7 @@ article,footer{
 }
 
 .price {
-    color: #FFD700; /* Oro */
+    color: #FFD700;
     font-weight: bold;
 }
 
@@ -304,4 +309,79 @@ h4.tag{
     font-size: 14px;
     text-align: center;
     opacity: .75;
+}
+
+.dual{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+}
+
+.dual img{
+    max-width: 150px;
+    max-height: 250px;
+    transition: .3s;
+}
+
+.dual img:hover{
+    scale: 1.1;
+    transition: .3s;
+}
+
+.link{
+    text-decoration: underline;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.dual{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+.click{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.specifica{
+    width: 100%;
+    text-align: center;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.trio{
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+}
+
+button{
+    color: var(--accent-color);
+    background-color: var(--bg-color);
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.125rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    transition: 0.3s;
+    scale: 1.05;
+}
+
+button.choosen{
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.hidden{
+    display:none;
 }
