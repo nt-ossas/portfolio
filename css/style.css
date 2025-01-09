@@ -103,7 +103,6 @@ nav .content {
     background-color: var(--bg-color);
     max-width: 750px;
     height: 60px;
-    line-height: 20px;
     border-radius: 50px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -115,7 +114,8 @@ nav .content {
     cursor: pointer;
 }
 
-nav p{
+nav a{
+    margin-top: 15px;
     color: var(--accent-color);
     text-decoration: none;
     text-transform: uppercase;
@@ -124,24 +124,25 @@ nav p{
     transition: .3s;
 }
 
-nav p::after{
+nav a::after{
     content: '';
     width: 150%;
     height: 3px;
     position: absolute;
     left: -25%;
+    top: 7.5px;
     margin-top: 35px;
-    background-color: var(--bg-color);
+    background-color: trasparent;
     opacity: .5;
     transition: .3s;
 }
 
-nav p:hover::after{
+nav a:hover::after{
     background-color: var(--accent-color);
     transition: .3s;
 }
 
-nav p.selected::after{
+nav a.selected::after{
     content: '';
     width: 150%;
     height: 3px;

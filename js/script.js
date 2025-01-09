@@ -7,22 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     scrollText.style.animationDuration = `${animationDuration}s`;
 });
-function section(n){
-    var section = document.getElementById(`section-${n}`);
-    var sectionAlls = document.querySelectorAll(`main`);
-    var navs = document.querySelectorAll(`.nav-${n}`);
-    var navAlls = document.querySelectorAll(`nav .content p`);
-    sectionAlls.forEach(element => {
-        element.classList.remove('online');
-    });
-    navAlls.forEach(element => {
-        element.classList.remove('selected');
-    });
-    navs.forEach(element => {
-        element.classList.add('selected');
-    });
-    section.classList.add('online');
-}
 
 function classe(n){
     var terza = document.getElementById('terza');

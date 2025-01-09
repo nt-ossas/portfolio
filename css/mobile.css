@@ -21,17 +21,21 @@
         width: 60%;
         margin-left: 40%;
     }
-    nav .content p{
+    nav .content a{
         font-size: 1rem;
         margin-top: .3rem;
     }
+
+    nav .content a::after{   
+        top: 0;
+    }
     
-    nav .content p.selected::after{
+    nav .content a.selected::after{
         margin-top: 1.5rem;
         height: 2px;
     }
     
-    nav .content p:hover::after{
+    nav .content a:hover::after{
         display: none;
     }
 
